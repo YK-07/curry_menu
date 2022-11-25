@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wnmhr+pi124=(n7_3@k=fs668d3*h=%1_p1%3@1_z6ekjilyi-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'PortApp',
 ]
 
 MIDDLEWARE = [
