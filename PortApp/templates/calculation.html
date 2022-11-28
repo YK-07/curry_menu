@@ -1,3 +1,4 @@
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
 </head>
 
 <body>
-    <p id="test1">Hello World!!</p>
+    {% include "_navbar.html" %}
+    ここはcalculationページです。
+    食べるもののカロリーを計算します。
 </body>
 
 </html>
