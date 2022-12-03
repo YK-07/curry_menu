@@ -12,14 +12,13 @@
     食べるもののカロリーを計算します。
     <form action="" method="POST">
         <table>
-        {{ form.as_table }}
-        {{form}}
+        {{ form.as_table }}<!--{{form}}-->
         </table>
         {% csrf_token %}
         <button type="submit">計算します</button>
     </form>
     {% if ans != "" %}
-    {{ ans }} </br>
+    {{ ans | linebreaksbr }} </br>
     {% endif %}
 </body>
 
