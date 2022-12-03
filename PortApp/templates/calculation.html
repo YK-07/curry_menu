@@ -4,13 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
 </head>
 
 <body>
     {% include "_navbar.html" %}
     ここはcalculationページです。
     食べるもののカロリーを計算します。
+    <form action="" method="POST">
+        <table>
+        {{ form.as_table }}
+        {{form}}
+        </table>
+        {% csrf_token %}
+        <button type="submit">計算します</button>
+    </form>
+    {% if ans != "" %}
+    {{ ans }} </br>
+    {% endif %}
 </body>
 
 </html>
