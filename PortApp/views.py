@@ -2,14 +2,7 @@ from django.shortcuts import render
 from .form import numForm
 
 # Create your views here.
-'''
-from django.views.generic import TemplateView
-class CalculationPageView(TemplateView):
-    template_name = "calculation.html"
 
-class CurryPageView(TemplateView):
-    template_name = "curry.html"
-'''
 def CurryPageView(request):
     return render(request, "curry.html")
 
@@ -32,8 +25,8 @@ def CalculationPageView(request):
                 protein=round(chicken/100*23 + rice*8 + onion/100*1 + + carrot/100*0.7 + tomato*4.8,2)
                 protein_meal=round(protein/meals,2)
                 ans_meals=f'[{str(meals)}食分] カロリー: {str(calorie)}kcal \n タンパク質: {str(protein)}g\n' 
-                meal=f'[1食分] カロリー: {str(calorie_meal)}kcal \n タンパク質: {str(protein_meal)}g'
-                ans=ans_meals + meal
+                ans_meal=f'[1食分] カロリー: {str(calorie_meal)}kcal \n タンパク質: {str(protein_meal)}g'
+                ans=ans_meals + ans_meal
     else:
         form=numForm()
         ans=""
