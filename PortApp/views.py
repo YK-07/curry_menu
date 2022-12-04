@@ -19,11 +19,21 @@ def CalculationPageView(request):
         if form.is_valid():# バリデーションを行う
 
             chicken=float(form.cleaned_data['chicken'])
-            rice=float(form.cleaned_data['rice'])
             onion=float(form.cleaned_data['onion'])
-            calorie=chicken/100*108 + rice*538 + onion/100*33
-            protein=chicken/100*23 + rice*8 + onion/100*1
-            ans=f'カロリー: {str(calorie)}kcal \n タンパク質: {str(protein)}g'
+            carrot=float(form.cleaned_data['carrot'])
+            tomato=float(form.cleaned_data['tomato'])
+            meals=int(form.cleaned_data['meals'])
+            rice=float(form.cleaned_data['rice'])
+            if meals==0:
+                ans='0以外の数字で、何食分か入力してください'
+            else:
+                calorie=round(chicken/100*108 + rice*538 + onion/100*33 + carrot/100*39 + tomato*84,2)
+                calorie_meal=round(calorie/meals,2)
+                protein=round(chicken/100*23 + rice*8 + onion/100*1 + + carrot/100*0.7 + tomato*4.8,2)
+                protein_meal=round(protein/meals,2)
+                ans_meals=f'[{str(meals)}食分] カロリー: {str(calorie)}kcal \n タンパク質: {str(protein)}g\n' 
+                meal=f'[1食分] カロリー: {str(calorie_meal)}kcal \n タンパク質: {str(protein_meal)}g'
+                ans=ans_meals + meal
     else:
         form=numForm()
         ans=""
