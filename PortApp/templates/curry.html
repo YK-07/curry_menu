@@ -9,25 +9,39 @@
 
 <body>
     {% include "_navbar.html" %}
-    ここはcurryページです。
-    カレーは飲み物です。<br>
-
-    <img src="{% static 'myapp\carrots.JPG' %}" width="420" height="240"><br>
-    <img src="{% static 'myapp\cut_chicken.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\frozen_carrots.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\frozen_chicken.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\salt.JPG' %}" width="420" height="240"><br>
-    <!--<img src="{% static 'myapp\onion.JPG' %}" width="420" height="240"><br> -->
-    <img src="{% static 'myapp\onion_salt.JPG' %}" width="420" height="260"><br>
-    <img src="{% static 'myapp\garlic.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\tomato.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\currypowder.JPG' %}" width="420" height="240"><br>
-    <img src="{% static 'myapp\curry.JPG' %}" width="420" height="260"><br>
-    <img src="{% static 'myapp\curry_cut_water.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\curry_cut_waterless.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\fried_eggs.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\frozen_curry_bottom.JPG' %}" width="420" height="280"><br>
-    <img src="{% static 'myapp\frozen_curry_top.JPG' %}" width="420" height="280"><br>
+    <p>ここではカレーの作り方を紹介します。食材の分量の確認や、カロリー計算は次ページで行えます。</p>
+    <p>カレーに使う具材は鶏胸肉(皮なし)、玉ねぎ、人参、トマト、にんにく、カレー粉(固形ルーではない)、塩です。
+        固形ルーを使用しないのは、ルーに油脂や小麦粉が多く含まれているので、カロリーが高くなるのを防ぐためです。</p>
+    <p>始めに、玉ねぎを薄くスライスします。ただし、玉ねぎを小さくすることが目的なので、スライスではなく、フードチョッパーなどでもOKです。
+        玉ねぎを小さくしたら、玉ねぎと塩と少量の水を鍋に入れ、蓋をして中火で加熱します。</p>
+        <!--<img src="{% static 'myapp\onion.JPG' %}" width="400" height="240"><br> -->
+        <img src="{% static 'myapp\salt.JPG' %}" width="400" height="230">
+        <img src="{% static 'myapp\onion_salt.JPG' %}" width="400" height="230"><br>
+    <p>玉ねぎに火を入れている間に、鶏胸肉と人参を小さめにカットします。最終的に鶏胸肉は細かくなるので、大きさは雑でもOKです。
+        これらを鍋に入れたら、蓋をして中火で火にかけます。この時に、鶏胸肉と人参を多めに切って冷凍しておくと、次に作るカレーの時短ができます。</p>
+    <img src="{% static 'myapp\carrots.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\frozen_carrots.JPG' %}" width="400" height="240"><br>
+    <img src="{% static 'myapp\cut_chicken.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\frozen_chicken.JPG' %}" width="400" height="240"><br>
+    <p>玉ねぎ、鶏胸肉、人参に火を入れている間ににんにくを細かく刻み、鍋に入れます。そして、トマト缶の中身を入れ、全ての食材が
+        浸るまで水を入れて、中火で加熱します。この時、吹きこぼれやすくなるので、水が鍋いっぱいにならないようにしてください。</p>
+    <img src="{% static 'myapp\garlic.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\tomato.JPG' %}" width="400" height="240"><br>
+    <p>しばらくして、軽く沸騰し始めたら、火を極弱火に落とし、蓋をして1~1.5時間ほど煮込みます。この時、水が鍋いっぱいでなく、多少の余裕があれば、吹きこぼれることは
+        ほとんどないので、放っておいても大丈夫です。ただし、30分に1度くらいは鍋の中身を混ぜてください。</p>
+    <img src="{% static 'myapp\currypowder.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\curry.JPG' %}" width="400" height="240"><br>    
+    <p>煮込み終わりの確認として、鶏胸肉をへらなどで、鍋肌に押し付けてみて、崩れるかどうか試してみて下さい。鶏胸肉が崩れたら、カレー粉を入れ、
+        混ぜてください。カレー粉がよく混ざったら、火を極弱火から、弱火と中火の中間くらいまで火力を上げ、水分を飛ばしてください。</p>
+    <p>水分が軽く飛んだら、鶏胸肉をへらなどでよくつぶしてください。簡単に繊維状に崩れます。つぶし終えたら、水分を完全に飛ばしてください。</p>
+    <img src="{% static 'myapp\curry_cut_water.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\curry_cut_waterless.JPG' %}" width="400" height="240"><br>
+    <p>水分を飛ばし終えたら、火を止め、粗熱をとってください。粗熱がとれたら、保存容器に移して、冷凍保存して完成です。</p>
+    <p>冷凍したままであれば、かなり日持ちします。ただし、容器にカレー粉の色が移る可能性があるので、注意してください。</p>
+    <img src="{% static 'myapp\frozen_curry_bottom.JPG' %}" width="400" height="240">
+    <img src="{% static 'myapp\frozen_curry_top.JPG' %}" width="400" height="240"><br>
+    <P>カレーに卵を乗せるとより美味しく食べられます。</P>
+    <img src="{% static 'myapp\fried_eggs.JPG' %}" width="400" height="240"><br>
     
 </body>
 

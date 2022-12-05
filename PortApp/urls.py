@@ -3,6 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.CalculationPageView, name='calculation'),
-    path('curry/',views.CurryPageView, name='curry'),
+    path('',views.CurryPageView, name='curry'),
+    path('calculation/', views.CalculationPageView, name='calculation'),
+
 ]
