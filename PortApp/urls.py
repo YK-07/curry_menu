@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path('',views.CurryPageView, name='curry'),
+    path('',views.IndexPageView, name='index'),
     path('calculation/', views.CalculationPageView, name='calculation'),
 
 ]

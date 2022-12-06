@@ -3,8 +3,8 @@ from .form import numForm
 
 # Create your views here.
 
-def CurryPageView(request):
-    return render(request, "curry.html")
+def IndexPageView(request):
+    return render(request, "index.html")
     
 def CalculationPageView(request):
     if request.method == 'POST':
