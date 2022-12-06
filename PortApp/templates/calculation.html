@@ -4,11 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{% static '_css.css' %}">
 </head>
 
 <body>
     {% include "_navbar.html" %}
-    カレーに使う食材からカロリー(kcal)、タンパク質(g)を計算できます。<br>
+    <br>
+    カレーに使う食材のカロリー(kcal)、タンパク質(g)を計算できます。<br>
     <br>
     <form action="" method="POST">
         <table>
@@ -18,8 +20,21 @@
         <button type="submit">計算します</button>
     </form>
     {% if ans != "" %}
-    {{ ans | linebreaksbr }} </br>
+    {{ ans | linebreaksbr }}
+    <br>
     {% endif %}
+    <h1>カレーの材料(8食分)</h1>
+    <ul>
+        <li>鶏むね肉(皮なし)：1000~1200g</li>
+        <li>玉ねぎ：約350g　3~4個</li>
+        <li>人参：約200g　2本</li>
+        <li>トマト缶：1缶</li>
+        <li>にんにく：4~5片　にんにくチューブでも問題ありません</li>
+        <li>塩：17g　味見をしながら、好みの塩分量に調節してください</li>
+        <li>カレー粉：16g　SBの赤缶カレー粉をおすすめします</li>       
+    </ul>
+    <br>
+    {% include "_table.html" %}
 </body>
 
 </html>

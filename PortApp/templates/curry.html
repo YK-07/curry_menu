@@ -4,19 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{% static '_css.css' %}">
+    <script src="{% static '_JavaScript.js' %}"></script>
 
 </head>
 
 <body>
     {% include "_navbar.html" %}
+    <div class="pagetop">Top</div>
+    <br>
     <p>ここではカレーの作り方を紹介します。食材の分量の確認や、カロリー計算は次ページで行えます。</p>
     <p>カレーに使う具材は鶏胸肉(皮なし)、玉ねぎ、人参、トマト、にんにく、カレー粉(固形ルーではない)、塩です。
         固形ルーを使用しないのは、ルーに油脂や小麦粉が多く含まれているので、カロリーが高くなるのを防ぐためです。</p>
     <p>始めに、玉ねぎを薄くスライスします。ただし、玉ねぎを小さくすることが目的なので、スライスではなく、フードチョッパーなどでもOKです。
         玉ねぎを小さくしたら、玉ねぎと塩と少量の水を鍋に入れ、蓋をして中火で加熱します。</p>
         <!--<img src="{% static 'myapp\onion.JPG' %}" width="400" height="240"><br> -->
-        <img src="{% static 'myapp\salt.JPG' %}" width="400" height="230">
-        <img src="{% static 'myapp\onion_salt.JPG' %}" width="400" height="230"><br>
+        <img src="{% static 'myapp\salt.JPG' %}" width="400" height="240">
+        <img src="{% static 'myapp\onion_salt.JPG' %}" width="400" height="240"><br>
     <p>玉ねぎに火を入れている間に、鶏胸肉と人参を小さめにカットします。最終的に鶏胸肉は細かくなるので、大きさは雑でもOKです。
         これらを鍋に入れたら、蓋をして中火で火にかけます。この時に、鶏胸肉と人参を多めに切って冷凍しておくと、次に作るカレーの時短ができます。</p>
     <img src="{% static 'myapp\carrots.JPG' %}" width="400" height="240">
