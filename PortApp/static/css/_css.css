@@ -1,13 +1,9 @@
-
-body {
-    
-}
-
 .navbar {
-    background: #FFFFCC;
+    position: fixed;
+    background: rgba(#FFFFCC);
 }
 
-h1 {
+.h1 {
     color: #FF97C2;
     font-size: 25px;
 }
@@ -31,7 +27,7 @@ h1 {
     color: #00A6C4;
     background: #fff;
     
-  /*   デフォルトは非表示 */
+  /*   デフォルトは非表示*/
     opacity: 1;
   }
   .pagetop:hover {

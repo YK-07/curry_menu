@@ -19,17 +19,16 @@ def CalculationPageView(request):
             tomato=float(form.cleaned_data['tomato'])
             rice=float(form.cleaned_data['rice'])
             egg=float(form.cleaned_data['egg'])
-           
+            
+            calorie=round(chicken/100*108 + rice*538 + onion/100*33 + carrot/100*39 + tomato*84 + egg*87,2)
+            protein=round(chicken/100*23 + rice*8 + onion/100*1 + + carrot/100*0.7 + tomato*4.8 + egg*7.4,2)
+            ans_meals=f'[{str(meals)}食分] カロリー: {str(calorie)}kcal \n 　　　タンパク質: {str(protein)}g\n'
+
             if meals==1:
-                calorie=round(chicken/100*108 + rice*538 + onion/100*33 + carrot/100*39 + tomato*84 + egg*87,2)
-                protein=round(chicken/100*23 + rice*8 + onion/100*1 + + carrot/100*0.7 + tomato*4.8 + egg*7.4,2)
-                ans=f'[{str(meals)}食分] カロリー: {str(calorie)}kcal \n タンパク質: {str(protein)}g'
+                ans=ans_meals
             else:
-                calorie=round(chicken/100*108 + rice*538 + onion/100*33 + carrot/100*39 + tomato*84 + egg*87,2)
                 calorie_meal=round(calorie/meals,2)
-                protein=round(chicken/100*23 + rice*8 + onion/100*1 + + carrot/100*0.7 + tomato*4.8 + egg*7.4,2)
                 protein_meal=round(protein/meals,2)
-                ans_meals=f'[{str(meals)}食分] カロリー: {str(calorie)}kcal \n　　　タンパク質: {str(protein)}g\n' 
                 ans_meal=f'[1食分] カロリー: {str(calorie_meal)}kcal \n 　　　タンパク質: {str(protein_meal)}g'
                 ans=ans_meals + ans_meal
     else:
