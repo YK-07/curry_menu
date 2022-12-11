@@ -1,18 +1,18 @@
 .navbar {
-    position: fixed;
-    background: rgba(#FFFFCC);
+    background: #FFFFCC;
 }
 
-.h1 {
+h1 {
     color: #FF97C2;
     font-size: 25px;
 }
-
+/*
 .space {
     height: 5000px;
 }
 
 .pagetop {
+    
     cursor: pointer;
     position: fixed;
     right: 30px;
@@ -27,10 +27,11 @@
     color: #00A6C4;
     background: #fff;
     
-  /*   デフォルトは非表示*/
     opacity: 1;
   }
   .pagetop:hover {
       box-shadow: 0 0 10px #00A6C4;
   }
+  /*
+  */
 

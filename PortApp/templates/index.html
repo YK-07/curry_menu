@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{% static 'css\_css.css' %}">
-    <script src="{% static 'JavaScript\_JavaScript.js' %}"></script>
+    <!--<script src="{% static 'JavaScript\_JavaScript.js' %}"></script>-->
 
 </head>
 
@@ -14,7 +14,7 @@
         {% include "_navbar.html" %}
     </header>
     
-    <div class="pagetop">Top</div>
+    <!--<div class="pagetop">Top</div>-->
     <br>
     <p>ここではカレーの作り方を紹介します。食材の分量の確認や、カロリー計算は次ページで行えます。</p>
     <p>カレーに使う具材は鶏胸肉(皮なし)、玉ねぎ、人参、トマト、にんにく、カレー粉(固形ルーではない)、塩です。
@@ -49,7 +49,8 @@
     <img src="{% static 'myapp\frozen_curry_top.JPG' %}" width="400" height="240"><br>
     <P>カレーに卵を乗せるとより美味しく食べられます。</P>
     <img src="{% static 'myapp\fried_eggs.JPG' %}" width="400" height="240"><br>
-    
+    <br>
+    {% include "_navbar.html" %}
 </body>
 
 </html>
