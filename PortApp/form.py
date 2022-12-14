@@ -1,6 +1,7 @@
 from django import forms
 
 class numForm(forms.Form):
+  #入力フォーム
   meals = forms.DecimalField(label='何食分', initial=1, min_value=1, help_text='何食分作るのか入力してください', required=True)
   chicken = forms.DecimalField(label='鶏むね肉(g)', initial=0, min_value=0, step_size=10, required=True)
   onion = forms.DecimalField(label='玉ねぎ(g)', initial=0, min_value=0, step_size=10, required=True)
